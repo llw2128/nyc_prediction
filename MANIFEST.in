@@ -1,4 +1,4 @@
-graft CB_IPO
+graft nyc_prop_prediction
 
 include LICENSE
 include README.md
