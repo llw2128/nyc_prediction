@@ -1,8 +1,10 @@
 import pandas as pd
 import time
 import math
-from bs4 import BeautifulSoup as bs
-from selenium import webdriver
+from sklearn.ensemble import RandomForestRegressor
+from sklearn import tree
+from sklearn.ensemble import GradientBoostingRegressor
+
 
 
 class scrape:

@@ -20,14 +20,14 @@ install:  ## install library
 # LINTS #
 #########
 lint:  ## run static analysis with flake8
-	python -m black --check CB_IPO setup.py
-	python -m flake8 CB_IPO setup.py
+	python -m black --check nyc_prop_prediction setup.py
+	python -m flake8 nyc_prop_prediction setup.py
 
 # Alias
 lints: lint
 
 format:  ## run autoformatting with black
-	python -m black CB_IPO setup.py
+	python -m black nyc_prop_prediction setup.py
 
 # alias
 fix: format
@@ -39,16 +39,16 @@ check:  ## check assets for packaging
 checks: check
 
 annotate:  ## run type checking
-	python -m mypy ./CB_IPO
+	python -m mypy ./nyc_prop_prediction
 
 #########
 # TESTS #
 #########
 test: ## clean and run unit tests
-	python -m pytest -v CB_IPO/tests
+	python -m pytest -v nyc_prop_prediction/tests
 
 coverage:  ## clean and run unit tests with coverage
-	python -m pytest -v CB_IPO/tests --cov=CB_IPO --cov-branch --cov-fail-under=75 --cov-report term-missing
+	python -m pytest -v nyc_prop_prediction/tests --cov=nyc_prop_prediction --cov-branch --cov-fail-under=75 --cov-report term-missing
 
 # Alias
 tests: test
