@@ -11,7 +11,7 @@ class predict:
  
     def __init__(self):
         
-        self.inputmodel_grad = load('zipmodel_grad.joblib')
+        self.inputmodel_grad = load('inputmodel_grad.joblib')
         self.zipmodel_grad = load('zipmodel_grad.joblib')
 
     def predict_price(self,input_type,model,inputs):
